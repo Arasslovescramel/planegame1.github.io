@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plane Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- ANA MENÜ -->
+    <div id="menu" class="screen">
+        <h1>✈ Plane Game</h1>
+        <button id="playBtn">OYNA</button>
+    </div>
+
+    <!-- BAŞLANGIÇ UÇAĞI SEÇME -->
+    <div id="selectScreen" class="screen hidden">
+        <h2>Başlangıç İçin 3 Uçak Seç</h2>
+
+        <div id="planeSelection"></div>
+
+        <button id="startGameBtn">Oyuna Başla</button>
+    </div>
+
+    <!-- OYUN -->
+    <div id="game" class="hidden">
+
+        <!-- Sol Üst -->
+        <div id="dayBox">
+            📅 Gün:
+            <span id="day">1</span>
+        </div>
+
+        <!-- Sağ Üst -->
+        <div id="goldBox">
+            🪙
+            <span id="gold">100</span>
+        </div>
+
+        <!-- Sol Menü -->
+        <div id="sidebar">
+
+            <button id="planesButton">
+                ✈ Uçaklarım
+            </button>
+
+            <button id="marketButton">
+                🛒 Market
+            </button>
+
+            <div id="planesPanel" class="panel"></div>
+
+            <div id="marketPanel" class="panel hidden"></div>
+
+        </div>
+
+        <!-- Orta -->
+
+        <div id="center">
+
+            <button id="startDayBtn">
+                Günü Başlat
+            </button>
+
+            <button id="finishDayBtn" class="hidden">
+                Günü Bitir
+            </button>
+
+            <div id="events">
+
+                <h3>Olaylar</h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
